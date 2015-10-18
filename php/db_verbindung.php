@@ -1,6 +1,6 @@
 <?php
 	$servername = "localhost";
-	$username = "rentabike";
+	$username = "root";
 	$password = "";
 	$dbname = "rentabike";
 ?>
