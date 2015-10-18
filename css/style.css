@@ -1,0 +1,91 @@
+body {
+	margin: 20px;
+	padding: 0;
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 960px;
+	background: white;
+}
+
+#kopf {
+	float: left;
+	background: orange;
+	width:100%; 
+	margin: 0 0 2.08333333% 0; /* 20/960x100 */
+}
+
+#logo {
+	width: 12.5%; /* 120/960x100 */
+	display: block;
+	background: white;
+	margin: 3.125% 2.08333333%; /* 30/960x100, & 20/960x100*/
+	padding: 2.08333333%; /* 20/960x100 */
+	text-align: center;
+	text-decoration: none;
+	color: grey;
+}
+
+#inhalt {
+	float: right;
+	width: 62.5%; /* 600/960x100 */
+}
+
+.info {
+	background:yellow;
+	padding:5%; /* 30/600x100 */
+	margin:3.333333333% 0;  /* 20/600x100 */
+}
+
+#nav {
+	float: left;
+	width: 29.16666667%; /* 280/960x100 */
+	background: #FC0;
+	padding: 2.08333333%; /* 20/960x100*/
+}
+
+
+#footer {
+	clear: both;
+	padding: 1.0416666667%; /* 10/960x100 */
+	background: orange;
+}
+
+.sql {
+	color: grey;
+	border-style: dashed;
+	margin: 0px 0px 10px 0px;
+}
+
+.beispiel {
+	color: grey;
+}
+.fehler {
+	color: red;
+}
+pre {
+    display: none;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+} 
+
+@media print {
+  /* zusätzliche oder abweichende CSS-Regeln für Drucker */
+  #nav , pre, #kopf{
+	display: none;
+  }  
+  
+  #inhalt {
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;  
+  }
+  
+  
+}
+

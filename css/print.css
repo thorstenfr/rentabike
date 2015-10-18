@@ -1,0 +1,50 @@
+body {
+	
+	padding: 0;
+}
+
+p   {
+	display: block;	
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+
+
+table, th, td {
+   border: 1px solid black;
+} 
+
+
+.sql {
+	color: grey;
+	border-style: dashed;
+	margin: 0px 0px 10px 0px;
+}
+
+pre {
+    display: none;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+} 
+.center {
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+.ueberschrift {
+	 font-size: 40px;
+	 text-align: center;
+}
+
+.entwickler {
+  font-family: "Courier New", Courier, monospace;
+}
+
+td {
+	width: 50%;
+  }

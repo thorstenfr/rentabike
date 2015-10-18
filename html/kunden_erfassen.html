@@ -1,0 +1,103 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>rent-a-bike by Thorsten Freimann</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<body>
+<div id="container">
+			<div id="kopf">
+				<p>rent-a-bike by Thorsten Freimann</p>
+			</div>
+			<div id ="nav">
+				<ul>
+					<li class = "cat1">
+						<a href="../index.html">Rent-a-Bike</a>
+					</li>
+					<li class = "cat2">
+						<a href="#">Anmeldung</a>
+						<ul>
+							<li><a href="../html/kunden_erfassen.html">Kunden erfassen</a></li>
+							<li><a href="kunden_suchen.html">Kunden suchen/&auml;ndern</a></li>
+							
+						</ul>
+					</li>
+					<li class = "cat3">
+						 <a href="#">Einkauf</a>
+						 <ul>
+							 <li><a href="#">Hersteller erfassen</a></li>
+							 <li><a href="#">Fahrrad erfassen</a></li>
+							 <li><a href="#">Fahrrad suchen</a></li>                         
+						 </ul>
+					</li>
+					<li class = "cat4">
+						<a href="#">Ausgaben</a>
+						<ul>
+							<li><a href="#">Fahrrad suchen</a></li>
+							<li><a href="#">Fahrrad ausleihen</a></li>
+							<li><a href="#">Fahrrad zur&uuml;cknehmen</a></li>
+						</ul>
+					</li>
+					<li class = "cat5">
+						<a href="#">Impressum</a>                    
+					</li>
+				</ul>
+			</div>
+			<div id="inhalt">
+				<form action="../php/kunden_erfassen.php" method="post">
+					<table border="0" cellpadding="0" cellspacing="4">
+					<tr>
+					  <td align="right">Kundennr:</td>
+					  <td><input name="kundennr" type="text" size="30" maxlength="30"></td>
+					  <td class="beispiel">Bsp.: 4001</td>
+					</tr>
+					<tr>
+					  <td align="right">Vorname:</td>
+					  <td><input name="vorname" type="text" size="30" maxlength="30"></td>
+					  <td class="beispiel">Bsp.: Bernd</td>
+					</tr>
+					<tr>
+					  <td align="right">Zuname:</td>
+					  <td><input name="zuname" type="text" size="30" maxlength="40"></td>
+					  <td class="beispiel">Bsp.: Stromberg</td>
+					</tr>
+					<tr>
+					  <td align="right">Straße Nr:</td>
+					  <td><input name="strasse" type="text" size="30" maxlength="40"></td>
+					  <td class="beispiel">Bsp.: Weinweg 12</td>
+					</tr>
+					<tr>
+					  <td align="right">Postleitzahl:</td>
+					  <td><input name="plz" type="text" size="30" maxlength="40"></td>
+					  <td class="beispiel">Bsp.: 75249</td>
+					</tr>
+					<tr>
+					  <td align="right">Wohnort:</td>
+					  <td><input name="wohnort" type="text" size="30" maxlength="40"></td>
+					  <td class="beispiel">Bsp.: Kieselbronn</td>
+					</tr>
+					<tr>
+					  <td align="right">Geschlecht:</td>				
+					  <td>
+						  <select name="geschlecht" size="1"> 
+							 <option value="m" selected="selected">m&auml;nnlich</option> 
+							 <option value="w">weiblich</option> 							 
+						  </select>  
+					  </td>
+					</tr>	
+					<tr>
+					  <td align="right">Geburtstag:</td>
+					  <td><input name="geburtstag" type="text" size="30" maxlength="40"></td>
+					  <td class="beispiel">Bsp.: 1972-08-30</td>
+					</tr>					
+				  </table>
+				  <input  type="Submit" name="kunden_eintragen" value="Kunden eintragen" /> 
+				</form>
+			</div>
+
+
+</div>
+
+</body>
+</html>
