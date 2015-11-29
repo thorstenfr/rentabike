@@ -1,0 +1,73 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>rent-a-bike by Thorsten Freimann</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<body>
+<div id="container">
+			<div id="kopf">
+				<p>rent-a-bike by Thorsten Freimann</p>
+			</div>
+			<div id ="nav">
+				<ul>
+					<li class = "cat1">
+						<a href="../index.html">Rent-a-Bike</a>
+					</li>
+					<li class = "cat2">
+						<a href="#">Anmeldung</a>
+						<ul>
+							<li><a href="../php/kunden_erfassen.php">Kunden erfassen</a></li>
+							<li><a href="../html/kunden_suchen.html">Kunden suchen/&auml;ndern</a></li>
+							
+						</ul>
+					</li>
+					<li class = "cat3">
+						 <a href="#">Einkauf</a>
+						 <ul>
+							 <li><a href="#">Hersteller erfassen</a></li>
+							 <li><a href="#">Fahrrad erfassen</a></li>
+							 <li><a href="#">Fahrrad suchen</a></li>                         
+						 </ul>
+					</li>
+					<li class = "cat4">
+						<a href="#">Ausgaben</a>
+						<ul>
+							<li><a href="#">Fahrrad suchen</a></li>
+							<li><a href="#">Fahrrad ausleihen</a></li>
+							<li><a href="#">Fahrrad zur&uuml;cknehmen</a></li>
+						</ul>
+					</li>
+					<li class = "cat5">
+						<a href="#">Impressum</a>                    
+					</li>
+				</ul>
+			</div>
+			<div id="inhalt">
+				<form action="../php/kunden_suchen.php" method="post">
+					<table border="0" cellpadding="0" cellspacing="4">
+					<tr>
+					  <td align="right">Vorname:</td>
+					  <td><input name="vorname" type="text" size="30" maxlength="30"></td>
+					</tr>
+					<tr>
+					  <td align="right">Zuname:</td>
+					  <td><input name="zuname" type="text" size="30" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <td align="right">PLZ:</td>
+					  <td><input name="plz" type="text" size="30" maxlength="40"></td>
+					</tr>
+				  </table>
+				  <input  type="Submit" name="kunden_suchen" value="Kunden suchen" /> 
+				</form>
+			</div>
+
+<pre>
+
+</pre>
+</div>
+
+</body>
+</html>
