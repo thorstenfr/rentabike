@@ -20,6 +20,9 @@
 						
 					include("db_verbindung.php");
 					
+					// Sollte später raus 
+					error_log("username: [$username]" , 0);
+					
 					// Create connection
 					$conn = new mysqli($servername, $username, $password, $dbname);
 					// Check connection
