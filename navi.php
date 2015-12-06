@@ -22,11 +22,15 @@
 	<li class = "cat4">
 		<a href="#">Ausgabe</a>
 		<ul>
-			<li><a href="#">Fahrrad suchen</a></li>
+			<li><a href="fahrrad_suchen.php">Fahrrad suchen</a></li>
 			<li><a href="fahrrad_ausleihen.php">Fahrrad ausleihen</a></li>
 			<li><a href="#">Fahrrad zur&uuml;cknehmen</a></li>
 		</ul>
 	</li>
+	<li class = "cat5">
+		<a href="auswertungen.php">Auswertungen</a>                    
+	</li>
+
 	<li class = "cat5">
 		<a href="html/impressum.html">Impressum</a>                    
 	</li>
