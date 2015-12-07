@@ -2,16 +2,17 @@
 <head>
         <meta charset="utf-8">
         <title>rent-a-bike by Thorsten Freimann</title>
-        <link rel="stylesheet" href="../css/print.css">
+        <link rel="stylesheet" href="./css/print.css">
     </head>
 
 <body>
 	
 	<?php
+	
 		echo "<pre>";
 		print_r($_POST);
 		echo "</pre>";
-		
+	
 		echo "<table class=\"center\">";
 			echo "<tr><td class=\"ueberschrift\" colspan=\"2\">Kundekarte </td></tr>";
 			echo "<tr><td>Kundennummer:</td><td>" . $_POST['kundennr'] . "</td></tr>";

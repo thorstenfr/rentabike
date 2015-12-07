@@ -70,7 +70,7 @@
 								
 								echo "<br><p class=\"entwickler\">Entwicklerinfo:</p><br>";
 								echo "<div class=\"sql\">" . $sql . "</div>";
-								echo "<form target=\"_blank\" action=\"../php/kundenausweis_drucken.php\" method=\"post\">  ";
+								echo "<form target=\"_blank\" action=\"kundenausweis_drucken.php\" method=\"post\">  ";
 									echo "<input type=\"hidden\" name=\"vorname\" value=\"" . $_POST['vorname'] ."\"/>";
 									echo "<input type=\"hidden\" name=\"zuname\" value=\"" . $_POST['zuname'] ."\"/>";
 									echo "<input type=\"hidden\" name=\"kundennr\" value=\"" . $_POST['kundennr'] ."\"/>";
