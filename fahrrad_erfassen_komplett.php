@@ -2,7 +2,7 @@
 <head>
         <meta charset="utf-8">
         <title>rent-a-bike by Thorsten Freimann</title>
-        <link rel="stylesheet" href="css/style.css">		
+        <link rel="stylesheet" href="./css/style.css">		
     </head>
 
 <body>
@@ -18,30 +18,34 @@
 					<table>
 					<tr>
 					  <td>Fahrradnr:</td>
-					  <td><input name="Fahrradnr" type="text" size="30" maxlength="30"></td>
+					  <td><input name="Fahrradnr" type="text" size="30" maxlength="30" 
+					  	pattern=".{1,5}" title="Fahrradnr muss zwischen 1 und 5 Stellen lang sein." required="required"></td>
 					  <td class="beispiel">Bsp.: 100</td>
 					</tr>
 					<tr>
 					  <td>Bezeichnung:</td>
-					  <td><input name="Bezeichnung" type="text" size="30" maxlength="30"></td>
+					  <td><input name="Bezeichnung" type="text" size="30" maxlength="30" required="required"></td>
 					  <td class="beispiel">Bsp.: CUBE Cross Race Disc</td>
 					</tr>
 					<tr>
 					  <td>Wert:</td>
 					  <td>							
-						<input name="Wert" type="text" size="30" maxlength="30">
+						<input name="Wert" type="text" size="30" maxlength="30"
+							required="required" pattern="[0-9.]{1,8}" title="Erlaubt sind nur Zahlen und '.' als Dezimalpunkt.">
 					</td>
 					  <td class="beispiel">Bsp.: 899.00</td>
 					</tr>
 					<tr>
 					  <td>Kaufdatum:</td>
-					  <td><input name="Kaufdatum" type="text" size="30" maxlength="40"></td>
+					  <td>
+					  	<input name="Kaufdatum" type="text" size="30" maxlength="40" required="required" pattern="(19|20)[0-9]{2}[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])" title="Datum muss in der Form JJJJ-MM-TT angegeben werden!">
+					  </td>
 					  <td class="beispiel">Format: JJJJ-MM-TT</td>
 					</tr>
 					<tr>
 					  <td align="right">Tagesmietpreis:</td>
 					  <td>											
-						<input name="Tagesmietpreis" type="text" size="30" maxlength="30">
+						<input name="Tagesmietpreis" type="text" size="30" maxlength="30" required="required" pattern="[0-9.]{1,6}" title="Erlaubt sind nur Zahlen und '.' als Dezimalpunkt.">
 					  </td>						
 					  <td class="beispiel">Bsp.: 19.99</td>
 					</tr>	
