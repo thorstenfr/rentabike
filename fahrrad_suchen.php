@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <head>
   <meta charset="utf-8">
@@ -39,7 +39,7 @@
 							if ($conn->connect_error) {
 								die("Connection failed: " . $conn->connect_error);
 							}					
-							$sql = "SELECT `Herstellernr`,`Herstellername` FROM hersteller";						
+							$sql = "SELECT `Herstellernr`,`Herstellername` FROM Hersteller";						
 							$result = $conn->query($sql);
 
 							
