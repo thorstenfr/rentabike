@@ -79,6 +79,10 @@
 								echo "</form>";
 						} else {
 							echo "<p class=\"fehler\">Error: " . $sql . "<br>" . $conn->error . "</p>";
+							?>
+							<a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">Zurück</a>
+							<?php
+							
 						}
 						
 						
@@ -88,6 +92,7 @@
 						
 						} else {
 							echo "<p class=\"fehler\">Kein Ort für " . $_POST['plz'] . " gefunden!";
+							
 							
 						}
 

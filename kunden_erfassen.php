@@ -58,7 +58,7 @@
 					</tr>	
 					<tr>
 					  <td align="right">Geburtstag:</td>
-					  <td><input name="geburtstag" type="text" size="30" maxlength="40" required="required"></td>
+					  <td><input name="geburtstag" type="text" size="30" maxlength="40" required="required" pattern="(19|20)[0-9]{2}[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])" title="Datum muss in der Form JJJJ-MM-TT angegeben werden!"></td>
 					  <td class="beispiel">Bsp.: 1972-08-30</td>
 					</tr>					
 				  </table>
