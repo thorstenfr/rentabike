@@ -14,6 +14,7 @@
 				<?php include 'navi.php';?>
 			</div>
 			<div id="inhalt">
+				<h1>Fahrrad ausleihen</h1>
 				<form action="vermietung_einfuegen.php" method="post">
 					<table>
 					<tr>
