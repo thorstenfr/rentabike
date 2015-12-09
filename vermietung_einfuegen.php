@@ -7,46 +7,14 @@
 
 <body>
 
-
-
-
 <div id="container">
 			<div id="kopf">
 				<p>rent-a-bike by Thorsten Freimann</p>
 			</div>
 			<div id ="nav">
-				<ul>
-					<li class = "cat1">
-						<a href="../index.html">Rent-a-Bike</a>
-					</li>
-					<li class = "cat2">
-						<a href="#">Anmeldung</a>
-						<ul>
-							<li><a href="#">Kunden erfassen</a></li>
-							<li><a href="#">Kunden suchen/&auml;ndern</a></li>
-							
-						</ul>
-					</li>
-					<li class = "cat3">
-						 <a href="#">Einkauf</a>
-						 <ul>
-							 <li><a href="#">Hersteller erfassen</a></li>
-							 <li><a href="#">Fahrrad erfassen</a></li>
-							 <li><a href="#">Fahrrad suchen</a></li>                         
-						 </ul>
-					</li>
-					<li class = "cat4">
-						<a href="#">Ausgaben</a>
-						<ul>
-							<li><a href="#">Fahrrad suchen</a></li>
-							<li><a href="#">Fahrrad ausleihen</a></li>
-							<li><a href="#">Fahrrad zur&uuml;cknehmen</a></li>
-						</ul>
-					</li>
-					<li class = "cat5">
-						<a href="#">Impressum</a>                    
-					</li>
-				</ul>
+				<?php include "navi.php"?>
+				
+				
 			</div>
 			<div id="inhalt">
 				

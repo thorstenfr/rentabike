@@ -19,22 +19,23 @@
 					<table>
 					<tr>
 					  <td>Mietnr:</td>
-					  <td><input name="mietnr" type="text" size="30" maxlength="30"></td>
+					  <td><input name="mietnr" type="text" size="30" maxlength="30" required="required" title="Zahl zwischen 1 und 10000"></td>
 					  <td class="beispiel">Bsp.: 4000</td>
 					</tr>
 					<tr>
 					  <td>Vertragsdatum:</td>
-					  <td><input name="mietdatum" type="text" size="30" maxlength="30"></td>
+					  <td><input name="mietdatum" type="text" size="30" maxlength="30"  
+					  	required="required" pattern="(19|20)[0-9]{2}[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])" title="Datum muss in der Form JJJJ-MM-TT angegeben werden!"></td>
 					  <td class="beispiel">Bsp.: 2014-11-29</td>
 					</tr>
 					<tr>
 					  <td>von:</td>
-					  <td><input name="von" type="text" size="30" maxlength="30"></td>
+					  <td><input name="von" type="text" size="30" maxlength="30" required="required" pattern="(19|20)[0-9]{2}[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])" title="Datum muss in der Form JJJJ-MM-TT angegeben werden!"></td>
 					  <td class="beispiel">Bsp.: 2014-11-29</td>
 					</tr>
 					<tr>
 					  <td>bis:</td>
-					  <td><input name="bis" type="text" size="30" maxlength="40"></td>
+					  <td><input name="bis" type="text" size="30" maxlength="40" required="required" pattern="(19|20)[0-9]{2}[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])" title="Datum muss in der Form JJJJ-MM-TT angegeben werden!"></td>
 					  <td class="beispiel">Bsp: 2014-11-30</td>
 					</tr>				
 					<?php
