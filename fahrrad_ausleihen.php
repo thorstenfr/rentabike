@@ -19,7 +19,15 @@
 					<table>
 					<tr>
 					  <td>Mietnr:</td>
-					  <td><input name="mietnr" type="text" size="30" maxlength="30" required="required" title="Zahl zwischen 1 und 10000"></td>
+					  <td>
+							<?php 
+					  			$value = rand(10000,99999);
+								echo "<input type=\"text\" style=\"text-align:right;\" name=\"mietnr\"  size=\"30\" maxlength=\"30\" pattern=\"[0-9]{1,5}\"  
+									required=\"required\" title=\"Bitte geben Sie eine Nummer zwischen 0 und 99999 ein.\" 
+									value=\"".$value."\" />";					 
+
+					  		?>						  
+					  	</td>
 					  <td class="beispiel">Bsp.: 4000</td>
 					</tr>
 					<tr>

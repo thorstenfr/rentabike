@@ -80,7 +80,16 @@
 						echo "Vertragsnummer: " . $_POST['mietnr'];
 						echo "<br><p class=\"entwickler\">Entwicklerinfo:<br></p>";
 						echo "<p class=\"sql\">" . $sql . "</p>";
-						
+						echo "<form target=\"_blank\" action=\"mitvertrag_drucken.php\" method=\"post\">  ";
+									echo "<input type=\"hidden\" name=\"kundenname\" value=\"" . $kundenname ."\"/>";
+									echo "<input type=\"hidden\" name=\"fahrradbezeichnung\" value=\"" . $fahrradbezeichnung ."\"/>";
+									echo "<input type=\"hidden\" name=\"mietdatum\" value=\"" . $_POST['mietdatum'] ."\"/>";
+									echo "<input type=\"hidden\" name=\"von\" value=\"" . $_POST['von'] ."\"/>";
+									echo "<input type=\"hidden\" name=\"bis\" value=\"" . $_POST['bis'] ."\"/>";
+									echo "<input type=\"hidden\" name=\"mietnr\" value=\"" . $_POST['mietnr'] ."\"/>";
+									echo "<input type=\"hidden\" name=\"sql\" value=\"" . $sql . "\"/>";								
+									echo "<input type=\"Submit\" name=\"karte_drucken\" value=\"Mitvertrag drucken\"/>";
+						echo "</form>";
 						
 						
 						} else {
