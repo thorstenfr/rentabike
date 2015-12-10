@@ -18,8 +18,15 @@
 					<table>
 					<tr>
 					  <td>Fahrradnr:</td>
-					  <td><input name="Fahrradnr" type="text" size="30" maxlength="30" 
-					  	pattern=".{1,5}" title="Fahrradnr muss zwischen 1 und 5 Stellen lang sein." required="required"></td>
+					  <td>
+							<?php 
+					  			$value = rand(10000,99999);
+								echo "<input type=\"text\" style=\"text-align:right;\" name=\"Fahrradnr\"  size=\"30\" maxlength=\"30\" pattern=\"[0-9]{1,5}\"  
+									required=\"required\" title=\"Bitte geben Sie eine Nummer zwischen 0 und 99999 ein.\" 
+									value=\"".$value."\" />";					 
+
+					  		?>			  
+					  </td>
 					  <td class="beispiel">Bsp.: 100</td>
 					</tr>
 					<tr>
