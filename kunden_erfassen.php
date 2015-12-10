@@ -17,9 +17,20 @@
 				<form action="kunden_erfasst.php" method="post">
 					<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
+						
 					  <td align="right">Kundennr:</td>
-					  <td><input name="kundennr" type="text" size="30" maxlength="30" pattern="[0-9]{1,5}" placeholder="0-99999" 
-					  		required="required" title="Bitte geben Sie eine Nummer zwischen 0 und 99999 ein." ></td>
+					  <td>
+					  		<?php 
+					  			$value = rand(10000,99999);
+								echo "<input type=\"text\" style=\"text-align:right;\" name=\"kundennr\"  size=\"30\" maxlength=\"30\" pattern=\"[0-9]{1,5}\"  
+									required=\"required\" title=\"Bitte geben Sie eine Nummer zwischen 0 und 99999 ein.\" 
+									value=\"".$value."\" />";					 
+
+					  		?>
+					  		
+
+
+					  	</td>
 					  <td class="beispiel">Bsp.: 4001</td>
 					</tr>
 					<tr>
