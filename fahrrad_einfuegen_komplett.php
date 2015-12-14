@@ -47,9 +47,9 @@
 						}
 						$sql = "INSERT INTO Fahrraeder (Fahrradnr, 
 							Bezeichnung, Tagesmietpreis, Wert, Kaufdatum, Herstellernr, Typnr) 
-							VALUES (" . $_POST['Fahrradnr'] . ", \"" .$_POST['Bezeichnung'] . "\", 
-							" . $_POST['Tagesmietpreis'] . "," . $_POST['Wert'] . "," . $_POST['Kaufdatum'] 
-							. ", " . $_POST['Hersteller'] . ", " . $_POST['Fahrradtypen'] . ")";
+							VALUES (\"" . $_POST['Fahrradnr'] . "\", \"" .$_POST['Bezeichnung'] . "\", 
+							" . $_POST['Tagesmietpreis'] . "," . $_POST['Wert'] . ",\"" . $_POST['Kaufdatum'] 
+							. "\", \"" . $_POST['Hersteller'] . "\", \"" . $_POST['Fahrradtypen'] . "\")";
 							
 							
 							
