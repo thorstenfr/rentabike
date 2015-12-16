@@ -65,7 +65,7 @@
 					
 					
 					$sql = "INSERT INTO Vermietungen 
-					            (`Mietnr`, `Mietdatum`, `von` , `bis` , `Fahrradnr` , `Kundennr`) VALUES ('" 
+					            (Mietnr, Mietdatum, von , bis , Fahrradnr , Kundennr) VALUES ('" 
 								. $_POST['mietnr']    . "', '" 
 								. $_POST['mietdatum'] . "', '"
 								. $_POST['von']       . "', '" 
