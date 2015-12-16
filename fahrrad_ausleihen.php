@@ -8,13 +8,12 @@
 <body>
 <div id="container">
 			<div id="kopf">
-				<p>rent-a-bike by Thorsten Freimann</p>
+				<p>rent-a-bike by Thorsten Freimann :: Fahrrad ausleihen</p>
 			</div>
 			<div id ="nav">
 				<?php include 'navi.php';?>
 			</div>
-			<div id="inhalt">
-				<h1>Fahrrad ausleihen</h1>
+			<div id="inhalt">				
 				<form action="vermietung_einfuegen.php" method="post">
 					<table>
 					<tr>
