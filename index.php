@@ -21,7 +21,7 @@
 			
 			
 			<div id="inhalt">
-				<h1>Herzlich Willkommen bei der Fahrradvermietung rent-a-bike</h1>
+				<h1>Herzlich Willkommen bei der Fahrradvermietung rent-a-bike</h1>				
 				<p>
 				</p>
 				

@@ -36,17 +36,17 @@
 					<tr>
 					  <td align="right">Vorname:</td>
 					  <td><input name="vorname" type="text" size="30" maxlength="30" required="required"></td>
-					  <td class="beispiel">Bsp.: Bernd</td>
+					  <td class="beispiel">Bsp.: Luke</td>
 					</tr>
 					<tr>
 					  <td align="right">Zuname:</td>
 					  <td><input name="zuname" type="text" size="30" maxlength="40" required="required"></td>
-					  <td class="beispiel">Bsp.: Stromberg</td>
+					  <td class="beispiel">Bsp.: Skywalker</td>
 					</tr>
 					<tr>
 					  <td align="right">Straße Nr:</td>
 					  <td><input name="strasse" type="text" size="30" maxlength="40" required="required"></td>
-					  <td class="beispiel">Bsp.: Weinweg 12</td>
+					  <td class="beispiel">Bsp.: Rebellenweg 12</td>
 					</tr>
 					<tr>
 					  <td align="right">Postleitzahl:</td>
@@ -56,7 +56,7 @@
 					<tr>
 					  <td align="right">Wohnort:</td>
 					  <td><input name="wohnort" type="text" size="30" maxlength="40" required="required"></td>
-					  <td class="beispiel">Bsp.: Kieselbronn</td>
+					  <td class="beispiel">Bsp.: Polis Massa</td>
 					</tr>
 					<tr>
 					  <td align="right">Geschlecht:</td>				
