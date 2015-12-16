@@ -32,7 +32,7 @@
 	</li>
 
 	<li class = "cat5">
-		<a href="html/impressum.html">Impressum</a>                    
+		<a href="impressum.html">Impressum</a>                    
 	</li>
 </ul>
 
