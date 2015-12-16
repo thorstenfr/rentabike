@@ -8,7 +8,7 @@
 <body>
 <div id="container">
 			<div id="kopf">
-				<p>rent-a-bike by Thorsten Freimann</p>
+				<p>rent-a-bike by Thorsten Freimann :: Fahrrad erfassen</p>
 			</div>
 			<div id ="nav">
 				<?php include 'navi.php';?>
