@@ -30,7 +30,7 @@
 						die("Connection failed: " . $conn->connect_error);
 					}					
 		
-					$sql = "SELECT `Fahrradnr`, `Bezeichnung`, `Tagesmietpreis`, Wert FROM `Fahrraeder` WHERE 1";					
+					$sql = "SELECT Fahrradnr, Bezeichnung, Tagesmietpreis, Wert FROM Fahrraeder WHERE 1";					
 				
 					if (isset($_POST['Herstellernr']) && $_POST['Herstellernr'] != "")
 					{

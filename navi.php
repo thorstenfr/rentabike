@@ -28,7 +28,7 @@
 		</ul>
 	</li>
 	<li class = "cat5">
-		<a href="auswertungen.php">Auswertungen</a>                    
+		<a href="#">Auswertungen</a>                    
 	</li>
 
 	<li class = "cat5">
