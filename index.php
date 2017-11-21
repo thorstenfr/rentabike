@@ -23,7 +23,7 @@
 			<div id="inhalt">
 				<div class="zentriert">
 					<h1>Herzlich Willkommen bei der Fahrradvermietung rent-a-bike</h1>				
-					<i>Möge die Macht mit dir sein!</i>
+					<i>Demo-Seite für Unterricht, Thorsten Freimann</i>
 				</div>
 			</div>
 			
