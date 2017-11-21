@@ -23,7 +23,7 @@
 			<div id="inhalt">
 				<div class="zentriert">
 					<h1>Herzlich Willkommen bei der Fahrradvermietung rent-a-bike</h1>				
-					<i>Demo-Seite für Unterricht, Thorsten Freimann</i>
+					<i>Demo-Seite für den Informatik-Unterricht von Thorsten Freimann</i>
 				</div>
 			</div>
 			
