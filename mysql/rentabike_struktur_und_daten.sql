@@ -35,15 +35,7 @@ CREATE TABLE `rentabike`.`Fahrraeder` (
   `Typnr` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`Fahrradnr`),
   INDEX `FahrradtypenFahrraeder` (`Typnr`),
-  INDEX `HerstellerFahrraeder` (`Herstellernr`),
-  CONSTRAINT `FahrradtypenFahrraeder` FOREIGN KEY `FahrradtypenFahrraeder` (`Typnr`)
-    REFERENCES `rentabike`.`Fahrradtypen` (`Typnr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT,
-  CONSTRAINT `HerstellerFahrraeder` FOREIGN KEY `HerstellerFahrraeder` (`Herstellernr`)
-    REFERENCES `rentabike`.`Hersteller` (`Herstellernr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT
+  INDEX `HerstellerFahrraeder` (`Herstellernr`)
 )
 ENGINE = INNODB
 CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -66,15 +58,7 @@ CREATE TABLE `rentabike`.`Inspektionen` (
   `Fahrradnr` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`Inspektionsnr`),
   INDEX `FahrraederInspektionen` (`Fahrradnr`),
-  INDEX `MonteureInspektionen` (`Monteurnr`),
-  CONSTRAINT `FahrraederInspektionen` FOREIGN KEY `FahrraederInspektionen` (`Fahrradnr`)
-    REFERENCES `rentabike`.`Fahrraeder` (`Fahrradnr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT,
-  CONSTRAINT `MonteureInspektionen` FOREIGN KEY `MonteureInspektionen` (`Monteurnr`)
-    REFERENCES `rentabike`.`Monteure` (`Monteurnr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT
+  INDEX `MonteureInspektionen` (`Monteurnr`)
 )
 ENGINE = INNODB
 CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -88,11 +72,7 @@ CREATE TABLE `rentabike`.`Kunden` (
   `Geschlecht` VARCHAR(1) NULL,
   `Gebtag` DATE NULL,
   PRIMARY KEY (`Kundennr`),
-  INDEX `WohnorteKunden` (`Ortnr`),
-  CONSTRAINT `WohnorteKunden` FOREIGN KEY `WohnorteKunden` (`Ortnr`)
-    REFERENCES `rentabike`.`Wohnorte` (`Ortnr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT
+  INDEX `WohnorteKunden` (`Ortnr`)
 )
 ENGINE = INNODB
 CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -115,15 +95,7 @@ CREATE TABLE `rentabike`.`Vermietungen` (
   `Kundennr` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`Mietnr`),
   INDEX `FahrraederVermietungen` (`Fahrradnr`),
-  INDEX `KundenVermietungen` (`Kundennr`),
-  CONSTRAINT `FahrraederVermietungen` FOREIGN KEY `FahrraederVermietungen` (`Fahrradnr`)
-    REFERENCES `rentabike`.`Fahrraeder` (`Fahrradnr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT,
-  CONSTRAINT `KundenVermietungen` FOREIGN KEY `KundenVermietungen` (`Kundennr`)
-    REFERENCES `rentabike`.`Kunden` (`Kundennr`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT
+  INDEX `KundenVermietungen` (`Kundennr`)
 )
 ENGINE = INNODB
 CHARACTER SET utf8 COLLATE utf8_general_ci;
