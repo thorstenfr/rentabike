@@ -33,19 +33,19 @@
 
 					if (isset($_POST['vorname']) && $_POST['vorname'] != "") 
 					{					
-						$sql = "SELECT `Kundennr`, `Name`, `Vorname` FROM `Kunden` WHERE Vorname like \"". $_POST['vorname'];
+						$sql = "SELECT kundennr, name, vorname FROM kunden WHERE vorname like \"". $_POST['vorname'];
 						if (isset($_POST['zuname']) && $_POST['zuname'] != "")
 						{
 							$sql = $sql . "\" AND Name like \"" . $_POST['zuname'];
 						}
 						
-						$sql = $sql . "\";";
 						
+						$sql = $sql .  "\"";
 						
 					}
 					else 
 					{
-						$sql = "SELECT `Kundennr`, `Name`, `Vorname` FROM `Kunden`";
+						$sql = "SELECT kundennr, name, vorname FROM kunden";
 					}
 					if (isset($_POST['plz']) && $_POST['plz'] != "") 
 					{	
@@ -62,10 +62,12 @@
 							}
 						}
 						
-						$sql = "select Kundennr, Name, Vorname FROM Kunden where Ortnr=" . $ortnr;
+						$sql = "SELECT kundennr, name, vorname FROM kunden WHERE ortnr=" . $ortnr;
 						
 					}  
 					
+										
+					$sql = $sql . " ORDER BY ". $_POST['myorder'] . ";";
 					
 					
 					
@@ -76,7 +78,7 @@
 						echo "<table><tr><th>Kundennr</th><th>Name</th><th>Vorname</th></tr>";
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo "<tr><td>".$row["Kundennr"]."</td><td>".$row["Name"]."</td><td> ".$row["Vorname"]."</td></tr>";
+							echo "<tr><td>".$row["kundennr"]."</td><td>".$row["name"]."</td><td> ".$row["vorname"]."</td></tr>";
 						}
 						echo "</table>";				
 						
@@ -92,6 +94,7 @@
 					?> 
 				</div>
 </div>
+
 
 
 

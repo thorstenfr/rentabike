@@ -24,11 +24,10 @@
 					  <td align="right">Zuname:</td>
 					  <td><input name="zuname" type="text" size="30" maxlength="40"></td>
 					</tr>
-					<tr>
-					  <td align="right">PLZ:</td>
-					  <td><input name="plz" type="text" size="30" maxlength="40"></td>
-					</tr>
+					
 				  </table>
+				 Sortieren nach:
+				  <input type="radio" name="myorder" value="vorname" checked> Vorname <input type="radio" name="myorder" value="name"> Zuname  <br>  
 				  <input  type="Submit" name="kunden_suchen" value="Kunden suchen" /> 
 				</form>
 			</div>
@@ -37,6 +36,7 @@
 
 </pre>
 </div>
+
 
 </body>
 </html>
